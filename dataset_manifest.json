@@ -1,0 +1,44 @@
+{
+  "name": "DSSAT-SR",
+  "expanded_name": "DeepSpace Satellite Super-Resolution Dataset",
+  "version": "1.0.0",
+  "source_dataset": "SPARK 2021",
+  "license": "CC-BY-NC-SA-4.0",
+  "total_images": 4240,
+  "ground_truth_resolution": [1024, 1024],
+  "splits": {"train": 2968, "val": 848, "test": 424},
+  "classes": {
+    "A": {"name": "AcrimSat", "count": 475},
+    "B": {"name": "Aquarius", "count": 324},
+    "C": {"name": "Aura", "count": 803},
+    "D": {"name": "Calipso", "count": 544},
+    "E": {"name": "CloudSat", "count": 429},
+    "F": {"name": "Jason", "count": 576},
+    "G": {"name": "Sentinel-6", "count": 411},
+    "H": {"name": "Terra", "count": 485},
+    "I": {"name": "TRMM", "count": 193}
+  },
+  "excluded_source_classes": ["CubeSat", "Debris"],
+  "degradations": {
+    "x2": {"method": "bicubic", "resolution": [512, 512]},
+    "x3": {"method": "bicubic", "resolution": [341, 341]},
+    "x4": {"method": "bicubic", "resolution": [256, 256]},
+    "x2_gauss": {"method": "bicubic + AWGN", "resolution": [512, 512], "mean": 0, "sigma": 10},
+    "x3_gauss": {"method": "bicubic + AWGN", "resolution": [341, 341], "mean": 0, "sigma": 10},
+    "x4_gauss": {"method": "bicubic + AWGN", "resolution": [256, 256], "mean": 0, "sigma": 10}
+  },
+  "mask": {
+    "format": "PNG",
+    "mode": "single-channel binary",
+    "resolution": [1024, 1024],
+    "background_value": 0,
+    "foreground_value": 255
+  },
+  "download": {
+    "provider": "Google Drive",
+    "url": "https://drive.google.com/file/d/1awbymEqjurDLk52MxE-GjCKDm2iFZ4Fa/view?usp=drivesdk",
+    "archive": "DSSAT-SR_v1.0.zip",
+    "size_bytes": 1964961259,
+    "sha256": "F38E3AC64F01E18BA5B7AC298123D260AA29246FD8DFAE8C241068B1118C04CB"
+  }
+}
