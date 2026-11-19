@@ -15,8 +15,6 @@ DSSAT-SR 基于 SPARK 2021 数据集的 RGB 图像构建，共包含 4,240 幅�
 
 压缩包：`DSSAT-SR_v1.0.zip`（1,964,961,259 字节）
 
-SHA-256：`F38E3AC64F01E18BA5B7AC298123D260AA29246FD8DFAE8C241068B1118C04CB`
-
 下载数据包含训练集、验证集和测试集，每个子集均提供 `GT`、`x2`、`x3`、
 `x4`、`x2_gauss`、`x3_gauss`、`x4_gauss` 和 `mask`。
 
@@ -29,21 +27,7 @@ SHA-256：`F38E3AC64F01E18BA5B7AC298123D260AA29246FD8DFAE8C241068B1118C04CB`
 | 测试集 | 424 | 10% |
 | **合计** | **4,240** | **100%** |
 
-## 卫星类别
-
-| 前缀 | 卫星类别 | 数量 |
-|---|---|---:|
-| A | AcrimSat | 475 |
-| B | Aquarius | 324 |
-| C | Aura | 803 |
-| D | Calipso | 544 |
-| E | CloudSat | 429 |
-| F | Jason | 576 |
-| G | Sentinel-6 | 411 |
-| H | Terra | 485 |
-| I | TRMM | 193 |
-
-数据集未包含 SPARK 2021 中的通用 CubeSat 和 Debris 类别。
+本数据集从 SPARK 2021 中选取了九类卫星图像。
 
 ## 数据集制作原理
 
@@ -70,15 +54,19 @@ n ~ N(0, 10^2)。
 `mask` 为 1024 x 1024 的单通道二值 PNG 图像，其中背景像素值为 0，卫星
 前景像素值为 255。
 
-## 效果展示
+## 原始图像示例
 
-### 不同尺度的双三次退化
+以下为 DSSAT-SR 中未经拼接、裁剪或重采样的 1024 x 1024 GT 图像。每幅图像
+均以独立文件直接展示，仅由浏览器等比例缩放，保持原始 1:1 宽高比。
 
-![双三次退化示例](assets/bicubic_examples.jpg)
-
-### 双三次退化与高斯噪声退化对比
-
-![高斯噪声退化示例](assets/gaussian_examples.jpg)
+<p align="center">
+  <img src="assets/examples/A_2image_00030_img.jpg" alt="DSSAT-SR GT 示例 1" width="48%">
+  <img src="assets/examples/B_2image_00196_img.jpg" alt="DSSAT-SR GT 示例 2" width="48%">
+</p>
+<p align="center">
+  <img src="assets/examples/C_2image_00013_img.jpg" alt="DSSAT-SR GT 示例 3" width="48%">
+  <img src="assets/examples/D_2image_00033_img.jpg" alt="DSSAT-SR GT 示例 4" width="48%">
+</p>
 
 ## 适用范围
 
@@ -88,7 +76,7 @@ DSSAT-SR 可用于卫星图像超分辨率模型的监督训练、多尺度重�
 本数据集来源于仿真图像。在缺少真实在轨数据验证的情况下，基于该数据集获得的
 性能结果不应直接等同于模型在真实空间成像条件下的性能。
 
-## 来源与许可证
+## 来源、许可证与引用
 
 DSSAT-SR 是 SPARK 2021 的衍生数据集，采用 CC BY-NC-SA 4.0 许可证进行
 非商业性公开。使用者应遵守署名、非商业使用和相同方式共享的要求，并同时遵守
@@ -96,4 +84,25 @@ SPARK 2021 原始数据的使用条款。
 
 SPARK 2021 项目主页：https://cvi2.uni.lu/spark-2021/
 
-使用本数据集时，请引用 README 中给出的 SPARK 2021 原始论文。
+### 引用说明
+
+DSSAT-SR 对 SPARK 2021 图像进行了再分发与派生处理。学术研究中引用 SPARK
+2021 原始论文，可以对来源数据给予适当署名，并保证衍生数据集的来源可追溯。
+
+```bibtex
+@inproceedings{musallam2021spark,
+  title     = {Spacecraft Recognition Leveraging Knowledge of Space Environment:
+               Simulator, Dataset, Competition Design and Analysis},
+  author    = {Musallam, Mohamed Adel and Gaudilliere, Vincent and Ghorbel, Enjie
+               and Al Ismaeil, Kassem and Perez, Marcos Damian and Poucet, Michel
+               and Aouada, Djamila},
+  booktitle = {2021 IEEE International Conference on Image Processing Challenges},
+  pages     = {11--15},
+  year      = {2021},
+  doi       = {10.1109/ICIPC53495.2021.9620184}
+}
+```
+
+### 致谢
+
+感谢卢森堡大学 CVI2 研究团队及其合作伙伴创建并公开 SPARK 2021 数据集。

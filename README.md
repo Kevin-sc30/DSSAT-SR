@@ -19,8 +19,6 @@ on Google Drive.
 
 Archive: `DSSAT-SR_v1.0.zip` (1,964,961,259 bytes)
 
-SHA-256: `F38E3AC64F01E18BA5B7AC298123D260AA29246FD8DFAE8C241068B1118C04CB`
-
 The downloadable package contains `GT`, `x2`, `x3`, `x4`, `x2_gauss`,
 `x3_gauss`, `x4_gauss`, and `mask` for the training, validation, and test
 splits.
@@ -34,21 +32,7 @@ splits.
 | Test | 424 | 10% |
 | **Total** | **4,240** | **100%** |
 
-The nine retained satellite classes are:
-
-| Prefix | Class | Images |
-|---|---|---:|
-| A | AcrimSat | 475 |
-| B | Aquarius | 324 |
-| C | Aura | 803 |
-| D | Calipso | 544 |
-| E | CloudSat | 429 |
-| F | Jason | 576 |
-| G | Sentinel-6 | 411 |
-| H | Terra | 485 |
-| I | TRMM | 193 |
-
-The generic CubeSat and Debris classes in SPARK 2021 are not included.
+The curated subset covers nine satellite categories from SPARK 2021.
 
 ## Construction methodology
 
@@ -77,13 +61,19 @@ denotes the background and 255 denotes the satellite foreground.
 
 ## Visual examples
 
-### Bicubic degradation at different scales
+The following images are unmodified 1024 x 1024 GT samples included in
+DSSAT-SR. Each image is stored and displayed as an individual file rather than
+as a synthesized montage. Browser-side scaling preserves the original 1:1
+aspect ratio.
 
-![Bicubic examples](assets/bicubic_examples.jpg)
-
-### Bicubic and Gaussian-noise degradation
-
-![Gaussian-noise examples](assets/gaussian_examples.jpg)
+<p align="center">
+  <img src="assets/examples/A_2image_00030_img.jpg" alt="DSSAT-SR GT sample 1" width="48%">
+  <img src="assets/examples/B_2image_00196_img.jpg" alt="DSSAT-SR GT sample 2" width="48%">
+</p>
+<p align="center">
+  <img src="assets/examples/C_2image_00013_img.jpg" alt="DSSAT-SR GT sample 3" width="48%">
+  <img src="assets/examples/D_2image_00033_img.jpg" alt="DSSAT-SR GT sample 4" width="48%">
+</p>
 
 ## Intended use
 
@@ -95,7 +85,7 @@ The source imagery is synthetic. Performance measured on DSSAT-SR should not be
 interpreted as direct evidence of performance on real on-orbit imagery without
 additional domain validation.
 
-## Source and license
+## Source, license, and citation
 
 DSSAT-SR is derived from the SPARK 2021 dataset. The dataset and the preview
 images in this repository are distributed under the Creative Commons
@@ -105,9 +95,11 @@ Attribution-NonCommercial-ShareAlike 4.0 International license
 
 Original project: https://cvi2.uni.lu/spark-2021/
 
-## Citation
+### Citation
 
-Please cite the original SPARK 2021 publication when using DSSAT-SR:
+DSSAT-SR redistributes and transforms imagery from SPARK 2021. For academic
+use, citing the original SPARK 2021 publication provides appropriate source
+attribution and keeps the provenance of the derived dataset traceable.
 
 ```bibtex
 @inproceedings{musallam2021spark,
@@ -122,3 +114,8 @@ Please cite the original SPARK 2021 publication when using DSSAT-SR:
   doi       = {10.1109/ICIPC53495.2021.9620184}
 }
 ```
+
+### Acknowledgment
+
+We thank the CVI2 research group at the University of Luxembourg and its
+collaborators for creating and releasing the SPARK 2021 dataset.
