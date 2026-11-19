@@ -32,8 +32,6 @@ splits.
 | Test | 424 | 10% |
 | **Total** | **4,240** | **100%** |
 
-The curated subset covers nine satellite categories from SPARK 2021.
-
 ## Construction methodology
 
 For a ground-truth image \(I_{GT}\), the noise-free low-resolution image at
@@ -61,19 +59,42 @@ denotes the background and 255 denotes the satellite foreground.
 
 ## Visual examples
 
-The following images are unmodified 1024 x 1024 GT samples included in
-DSSAT-SR. Each image is stored and displayed as an individual file rather than
-as a synthesized montage. Browser-side scaling preserves the original 1:1
-aspect ratio.
+Click any image to inspect it at its native resolution. All images within a
+sample use the same base filename.
 
-<p align="center">
-  <img src="assets/examples/A_2image_00030_img.jpg" alt="DSSAT-SR GT sample 1" width="48%">
-  <img src="assets/examples/B_2image_00196_img.jpg" alt="DSSAT-SR GT sample 2" width="48%">
-</p>
-<p align="center">
-  <img src="assets/examples/C_2image_00013_img.jpg" alt="DSSAT-SR GT sample 3" width="48%">
-  <img src="assets/examples/D_2image_00033_img.jpg" alt="DSSAT-SR GT sample 4" width="48%">
-</p>
+### Sample A — `A_2image_00030_img`
+
+<table>
+  <tr>
+    <td align="center" width="25%"><strong>GT</strong><br><sub>1024 x 1024</sub><br><a href="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg" alt="Sample A ground truth" width="180"></a></td>
+    <td align="center" width="25%"><strong>x2</strong><br><sub>Bicubic · 512 x 512</sub><br><a href="assets/examples/A_2image_00030_img/x2/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x2/A_2image_00030_img.jpg" alt="Sample A bicubic x2" width="180"></a></td>
+    <td align="center" width="25%"><strong>x3</strong><br><sub>Bicubic · 341 x 341</sub><br><a href="assets/examples/A_2image_00030_img/x3/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x3/A_2image_00030_img.jpg" alt="Sample A bicubic x3" width="180"></a></td>
+    <td align="center" width="25%"><strong>x4</strong><br><sub>Bicubic · 256 x 256</sub><br><a href="assets/examples/A_2image_00030_img/x4/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x4/A_2image_00030_img.jpg" alt="Sample A bicubic x4" width="180"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Mask</strong><br><sub>1024 x 1024</sub><br><a href="assets/examples/A_2image_00030_img/mask/A_2image_00030_img.png"><img src="assets/examples/A_2image_00030_img/mask/A_2image_00030_img.png" alt="Sample A foreground mask" width="180"></a></td>
+    <td align="center"><strong>x2_gauss</strong><br><sub>Bicubic + AWGN · 512 x 512 · &sigma; = 10</sub><br><a href="assets/examples/A_2image_00030_img/x2_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x2_gauss/A_2image_00030_img.jpg" alt="Sample A bicubic x2 with Gaussian noise" width="180"></a></td>
+    <td align="center"><strong>x3_gauss</strong><br><sub>Bicubic + AWGN · 341 x 341 · &sigma; = 10</sub><br><a href="assets/examples/A_2image_00030_img/x3_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x3_gauss/A_2image_00030_img.jpg" alt="Sample A bicubic x3 with Gaussian noise" width="180"></a></td>
+    <td align="center"><strong>x4_gauss</strong><br><sub>Bicubic + AWGN · 256 x 256 · &sigma; = 10</sub><br><a href="assets/examples/A_2image_00030_img/x4_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x4_gauss/A_2image_00030_img.jpg" alt="Sample A bicubic x4 with Gaussian noise" width="180"></a></td>
+  </tr>
+</table>
+
+### Sample C — `C_2image_00013_img`
+
+<table>
+  <tr>
+    <td align="center" width="25%"><strong>GT</strong><br><sub>1024 x 1024</sub><br><a href="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg" alt="Sample C ground truth" width="180"></a></td>
+    <td align="center" width="25%"><strong>x2</strong><br><sub>Bicubic · 512 x 512</sub><br><a href="assets/examples/C_2image_00013_img/x2/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x2/C_2image_00013_img.jpg" alt="Sample C bicubic x2" width="180"></a></td>
+    <td align="center" width="25%"><strong>x3</strong><br><sub>Bicubic · 341 x 341</sub><br><a href="assets/examples/C_2image_00013_img/x3/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x3/C_2image_00013_img.jpg" alt="Sample C bicubic x3" width="180"></a></td>
+    <td align="center" width="25%"><strong>x4</strong><br><sub>Bicubic · 256 x 256</sub><br><a href="assets/examples/C_2image_00013_img/x4/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x4/C_2image_00013_img.jpg" alt="Sample C bicubic x4" width="180"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Mask</strong><br><sub>1024 x 1024</sub><br><a href="assets/examples/C_2image_00013_img/mask/C_2image_00013_img.png"><img src="assets/examples/C_2image_00013_img/mask/C_2image_00013_img.png" alt="Sample C foreground mask" width="180"></a></td>
+    <td align="center"><strong>x2_gauss</strong><br><sub>Bicubic + AWGN · 512 x 512 · &sigma; = 10</sub><br><a href="assets/examples/C_2image_00013_img/x2_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x2_gauss/C_2image_00013_img.jpg" alt="Sample C bicubic x2 with Gaussian noise" width="180"></a></td>
+    <td align="center"><strong>x3_gauss</strong><br><sub>Bicubic + AWGN · 341 x 341 · &sigma; = 10</sub><br><a href="assets/examples/C_2image_00013_img/x3_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x3_gauss/C_2image_00013_img.jpg" alt="Sample C bicubic x3 with Gaussian noise" width="180"></a></td>
+    <td align="center"><strong>x4_gauss</strong><br><sub>Bicubic + AWGN · 256 x 256 · &sigma; = 10</sub><br><a href="assets/examples/C_2image_00013_img/x4_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x4_gauss/C_2image_00013_img.jpg" alt="Sample C bicubic x4 with Gaussian noise" width="180"></a></td>
+  </tr>
+</table>
 
 ## Intended use
 

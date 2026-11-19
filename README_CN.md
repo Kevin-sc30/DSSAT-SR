@@ -27,8 +27,6 @@ DSSAT-SR 基于 SPARK 2021 数据集的 RGB 图像构建，共包含 4,240 幅�
 | 测试集 | 424 | 10% |
 | **合计** | **4,240** | **100%** |
 
-本数据集从 SPARK 2021 中选取了九类卫星图像。
-
 ## 数据集制作原理
 
 对于高分辨率真值图像 \(I_{GT}\)，采用双三次插值构建尺度因子为
@@ -54,19 +52,43 @@ n ~ N(0, 10^2)。
 `mask` 为 1024 x 1024 的单通道二值 PNG 图像，其中背景像素值为 0，卫星
 前景像素值为 255。
 
-## 原始图像示例
+## 可视化对比
 
-以下为 DSSAT-SR 中未经拼接、裁剪或重采样的 1024 x 1024 GT 图像。每幅图像
-均以独立文件直接展示，仅由浏览器等比例缩放，保持原始 1:1 宽高比。
+点击任意图像可查看其原始分辨率。同一样本的所有图像均使用相同的基本文件名。
 
-<p align="center">
-  <img src="assets/examples/A_2image_00030_img.jpg" alt="DSSAT-SR GT 示例 1" width="48%">
-  <img src="assets/examples/B_2image_00196_img.jpg" alt="DSSAT-SR GT 示例 2" width="48%">
-</p>
-<p align="center">
-  <img src="assets/examples/C_2image_00013_img.jpg" alt="DSSAT-SR GT 示例 3" width="48%">
-  <img src="assets/examples/D_2image_00033_img.jpg" alt="DSSAT-SR GT 示例 4" width="48%">
-</p>
+### 样本 A — `A_2image_00030_img`
+
+<table>
+  <tr>
+    <td align="center" width="25%"><strong>GT</strong><br><sub>1024 x 1024</sub><br><a href="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg" alt="样本 A 真值图像" width="180"></a></td>
+    <td align="center" width="25%"><strong>x2</strong><br><sub>双三次 · 512 x 512</sub><br><a href="assets/examples/A_2image_00030_img/x2/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x2/A_2image_00030_img.jpg" alt="样本 A 双三次 x2" width="180"></a></td>
+    <td align="center" width="25%"><strong>x3</strong><br><sub>双三次 · 341 x 341</sub><br><a href="assets/examples/A_2image_00030_img/x3/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x3/A_2image_00030_img.jpg" alt="样本 A 双三次 x3" width="180"></a></td>
+    <td align="center" width="25%"><strong>x4</strong><br><sub>双三次 · 256 x 256</sub><br><a href="assets/examples/A_2image_00030_img/x4/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x4/A_2image_00030_img.jpg" alt="样本 A 双三次 x4" width="180"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>前景掩膜</strong><br><sub>1024 x 1024</sub><br><a href="assets/examples/A_2image_00030_img/mask/A_2image_00030_img.png"><img src="assets/examples/A_2image_00030_img/mask/A_2image_00030_img.png" alt="样本 A 前景掩膜" width="180"></a></td>
+    <td align="center"><strong>x2_gauss</strong><br><sub>双三次 + 高斯噪声 · 512 x 512 · &sigma; = 10</sub><br><a href="assets/examples/A_2image_00030_img/x2_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x2_gauss/A_2image_00030_img.jpg" alt="样本 A 双三次 x2 高斯噪声" width="180"></a></td>
+    <td align="center"><strong>x3_gauss</strong><br><sub>双三次 + 高斯噪声 · 341 x 341 · &sigma; = 10</sub><br><a href="assets/examples/A_2image_00030_img/x3_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x3_gauss/A_2image_00030_img.jpg" alt="样本 A 双三次 x3 高斯噪声" width="180"></a></td>
+    <td align="center"><strong>x4_gauss</strong><br><sub>双三次 + 高斯噪声 · 256 x 256 · &sigma; = 10</sub><br><a href="assets/examples/A_2image_00030_img/x4_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x4_gauss/A_2image_00030_img.jpg" alt="样本 A 双三次 x4 高斯噪声" width="180"></a></td>
+  </tr>
+</table>
+
+### 样本 C — `C_2image_00013_img`
+
+<table>
+  <tr>
+    <td align="center" width="25%"><strong>GT</strong><br><sub>1024 x 1024</sub><br><a href="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg" alt="样本 C 真值图像" width="180"></a></td>
+    <td align="center" width="25%"><strong>x2</strong><br><sub>双三次 · 512 x 512</sub><br><a href="assets/examples/C_2image_00013_img/x2/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x2/C_2image_00013_img.jpg" alt="样本 C 双三次 x2" width="180"></a></td>
+    <td align="center" width="25%"><strong>x3</strong><br><sub>双三次 · 341 x 341</sub><br><a href="assets/examples/C_2image_00013_img/x3/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x3/C_2image_00013_img.jpg" alt="样本 C 双三次 x3" width="180"></a></td>
+    <td align="center" width="25%"><strong>x4</strong><br><sub>双三次 · 256 x 256</sub><br><a href="assets/examples/C_2image_00013_img/x4/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x4/C_2image_00013_img.jpg" alt="样本 C 双三次 x4" width="180"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>前景掩膜</strong><br><sub>1024 x 1024</sub><br><a href="assets/examples/C_2image_00013_img/mask/C_2image_00013_img.png"><img src="assets/examples/C_2image_00013_img/mask/C_2image_00013_img.png" alt="样本 C 前景掩膜" width="180"></a></td>
+    <td align="center"><strong>x2_gauss</strong><br><sub>双三次 + 高斯噪声 · 512 x 512 · &sigma; = 10</sub><br><a href="assets/examples/C_2image_00013_img/x2_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x2_gauss/C_2image_00013_img.jpg" alt="样本 C 双三次 x2 高斯噪声" width="180"></a></td>
+    <td align="center"><strong>x3_gauss</strong><br><sub>双三次 + 高斯噪声 · 341 x 341 · &sigma; = 10</sub><br><a href="assets/examples/C_2image_00013_img/x3_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x3_gauss/C_2image_00013_img.jpg" alt="样本 C 双三次 x3 高斯噪声" width="180"></a></td>
+    <td align="center"><strong>x4_gauss</strong><br><sub>双三次 + 高斯噪声 · 256 x 256 · &sigma; = 10</sub><br><a href="assets/examples/C_2image_00013_img/x4_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x4_gauss/C_2image_00013_img.jpg" alt="样本 C 双三次 x4 高斯噪声" width="180"></a></td>
+  </tr>
+</table>
 
 ## 适用范围
 
