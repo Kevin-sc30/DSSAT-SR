@@ -60,17 +60,68 @@ denotes the background and 255 denotes the satellite foreground.
 ## Visual examples
 
 Four representative satellite types are shown at proportional output sizes.
+Left to right: **GT**, **x2**, **x3**, and **x4**. Click an image to open it.
 
 ### Bicubic downsampling
 
 <p align="center">
-  <img src="assets/visual_examples/bicubic_comparison.jpg" alt="GT and bicubic x2, x3, and x4 comparisons for four satellite types" width="100%">
+  <strong>A</strong><br>
+  <a href="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg" alt="Sample A GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x2/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x2/A_2image_00030_img.jpg" alt="Sample A x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x3/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x3/A_2image_00030_img.jpg" alt="Sample A x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x4/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x4/A_2image_00030_img.jpg" alt="Sample A x4" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>B</strong><br>
+  <a href="assets/examples/B_2image_00196_img/GT/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/GT/B_2image_00196_img.jpg" alt="Sample B GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x2/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x2/B_2image_00196_img.jpg" alt="Sample B x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x3/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x3/B_2image_00196_img.jpg" alt="Sample B x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x4/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x4/B_2image_00196_img.jpg" alt="Sample B x4" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>C</strong><br>
+  <a href="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg" alt="Sample C GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x2/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x2/C_2image_00013_img.jpg" alt="Sample C x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x3/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x3/C_2image_00013_img.jpg" alt="Sample C x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x4/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x4/C_2image_00013_img.jpg" alt="Sample C x4" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>D</strong><br>
+  <a href="assets/examples/D_2image_00033_img/GT/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/GT/D_2image_00033_img.jpg" alt="Sample D GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x2/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x2/D_2image_00033_img.jpg" alt="Sample D x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x3/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x3/D_2image_00033_img.jpg" alt="Sample D x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x4/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x4/D_2image_00033_img.jpg" alt="Sample D x4" width="11%" align="bottom"></a>
 </p>
 
 ### Bicubic downsampling with Gaussian noise
 
 <p align="center">
-  <img src="assets/visual_examples/gaussian_comparison.jpg" alt="GT and Gaussian-noisy bicubic x2, x3, and x4 comparisons for four satellite types" width="100%">
+  <strong>A</strong><br>
+  <a href="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg" alt="Sample A GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x2_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x2_gauss/A_2image_00030_img.jpg" alt="Sample A x2 with Gaussian noise" width="22%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x3_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x3_gauss/A_2image_00030_img.jpg" alt="Sample A x3 with Gaussian noise" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x4_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x4_gauss/A_2image_00030_img.jpg" alt="Sample A x4 with Gaussian noise" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>B</strong><br>
+  <a href="assets/examples/B_2image_00196_img/GT/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/GT/B_2image_00196_img.jpg" alt="Sample B GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x2_gauss/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x2_gauss/B_2image_00196_img.jpg" alt="Sample B x2 with Gaussian noise" width="22%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x3_gauss/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x3_gauss/B_2image_00196_img.jpg" alt="Sample B x3 with Gaussian noise" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x4_gauss/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x4_gauss/B_2image_00196_img.jpg" alt="Sample B x4 with Gaussian noise" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>C</strong><br>
+  <a href="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg" alt="Sample C GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x2_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x2_gauss/C_2image_00013_img.jpg" alt="Sample C x2 with Gaussian noise" width="22%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x3_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x3_gauss/C_2image_00013_img.jpg" alt="Sample C x3 with Gaussian noise" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x4_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x4_gauss/C_2image_00013_img.jpg" alt="Sample C x4 with Gaussian noise" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>D</strong><br>
+  <a href="assets/examples/D_2image_00033_img/GT/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/GT/D_2image_00033_img.jpg" alt="Sample D GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x2_gauss/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x2_gauss/D_2image_00033_img.jpg" alt="Sample D x2 with Gaussian noise" width="22%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x3_gauss/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x3_gauss/D_2image_00033_img.jpg" alt="Sample D x3 with Gaussian noise" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x4_gauss/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x4_gauss/D_2image_00033_img.jpg" alt="Sample D x4 with Gaussian noise" width="11%" align="bottom"></a>
 </p>
 
 ## Intended use

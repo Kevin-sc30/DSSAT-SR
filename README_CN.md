@@ -55,18 +55,69 @@ n ~ N(0, 10^2)。
 
 ## 可视化对比
 
-以下按输出尺寸比例展示四种代表性卫星图像。
+以下按输出尺寸比例展示四种代表性卫星图像。从左到右依次为 **GT**、**x2**、
+**x3** 和 **x4**，点击图像可查看原图。
 
 ### 双三次下采样
 
 <p align="center">
-  <img src="assets/visual_examples/bicubic_comparison.jpg" alt="四种卫星图像的 GT 与双三次 x2、x3、x4 对比" width="100%">
+  <strong>A</strong><br>
+  <a href="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg" alt="样本 A GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x2/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x2/A_2image_00030_img.jpg" alt="样本 A x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x3/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x3/A_2image_00030_img.jpg" alt="样本 A x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x4/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x4/A_2image_00030_img.jpg" alt="样本 A x4" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>B</strong><br>
+  <a href="assets/examples/B_2image_00196_img/GT/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/GT/B_2image_00196_img.jpg" alt="样本 B GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x2/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x2/B_2image_00196_img.jpg" alt="样本 B x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x3/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x3/B_2image_00196_img.jpg" alt="样本 B x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x4/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x4/B_2image_00196_img.jpg" alt="样本 B x4" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>C</strong><br>
+  <a href="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg" alt="样本 C GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x2/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x2/C_2image_00013_img.jpg" alt="样本 C x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x3/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x3/C_2image_00013_img.jpg" alt="样本 C x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x4/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x4/C_2image_00013_img.jpg" alt="样本 C x4" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>D</strong><br>
+  <a href="assets/examples/D_2image_00033_img/GT/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/GT/D_2image_00033_img.jpg" alt="样本 D GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x2/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x2/D_2image_00033_img.jpg" alt="样本 D x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x3/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x3/D_2image_00033_img.jpg" alt="样本 D x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x4/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x4/D_2image_00033_img.jpg" alt="样本 D x4" width="11%" align="bottom"></a>
 </p>
 
 ### 双三次下采样与高斯噪声
 
 <p align="center">
-  <img src="assets/visual_examples/gaussian_comparison.jpg" alt="四种卫星图像的 GT 与含高斯噪声 x2、x3、x4 对比" width="100%">
+  <strong>A</strong><br>
+  <a href="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/GT/A_2image_00030_img.jpg" alt="样本 A GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x2_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x2_gauss/A_2image_00030_img.jpg" alt="样本 A 含高斯噪声 x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x3_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x3_gauss/A_2image_00030_img.jpg" alt="样本 A 含高斯噪声 x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/A_2image_00030_img/x4_gauss/A_2image_00030_img.jpg"><img src="assets/examples/A_2image_00030_img/x4_gauss/A_2image_00030_img.jpg" alt="样本 A 含高斯噪声 x4" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>B</strong><br>
+  <a href="assets/examples/B_2image_00196_img/GT/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/GT/B_2image_00196_img.jpg" alt="样本 B GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x2_gauss/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x2_gauss/B_2image_00196_img.jpg" alt="样本 B 含高斯噪声 x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x3_gauss/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x3_gauss/B_2image_00196_img.jpg" alt="样本 B 含高斯噪声 x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/B_2image_00196_img/x4_gauss/B_2image_00196_img.jpg"><img src="assets/examples/B_2image_00196_img/x4_gauss/B_2image_00196_img.jpg" alt="样本 B 含高斯噪声 x4" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>C</strong><br>
+  <a href="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/GT/C_2image_00013_img.jpg" alt="样本 C GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x2_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x2_gauss/C_2image_00013_img.jpg" alt="样本 C 含高斯噪声 x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x3_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x3_gauss/C_2image_00013_img.jpg" alt="样本 C 含高斯噪声 x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/C_2image_00013_img/x4_gauss/C_2image_00013_img.jpg"><img src="assets/examples/C_2image_00013_img/x4_gauss/C_2image_00013_img.jpg" alt="样本 C 含高斯噪声 x4" width="11%" align="bottom"></a>
+</p>
+<p align="center">
+  <strong>D</strong><br>
+  <a href="assets/examples/D_2image_00033_img/GT/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/GT/D_2image_00033_img.jpg" alt="样本 D GT" width="44%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x2_gauss/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x2_gauss/D_2image_00033_img.jpg" alt="样本 D 含高斯噪声 x2" width="22%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x3_gauss/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x3_gauss/D_2image_00033_img.jpg" alt="样本 D 含高斯噪声 x3" width="14.67%" align="bottom"></a>
+  <a href="assets/examples/D_2image_00033_img/x4_gauss/D_2image_00033_img.jpg"><img src="assets/examples/D_2image_00033_img/x4_gauss/D_2image_00033_img.jpg" alt="样本 D 含高斯噪声 x4" width="11%" align="bottom"></a>
 </p>
 
 ## 适用范围
